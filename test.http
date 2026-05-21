@@ -1,0 +1,32 @@
+###Create
+POST http://localhost:3001/employees
+Content-Type: application/json
+
+{
+    "empId" : "EMP001",
+    "name" : "test employee",
+    "email" : "test@vsorg.com",
+    "department" : "IT",
+    "position" : "Software Engineer",
+    "hireDate" : "2023-12-01",
+    "salary" : 6500.00,
+    "active" : true
+}
+
+###Update
+PUT http://localhost:3001/employees/4
+Content-Type: application/json
+
+{
+    "empId" : "EMP001",
+    "name" : "test employee(update)",
+    "email" : "test1@vsorg.com",
+    "department" : "IT",
+    "position" : "Software Engineer",
+    "hireDate" : "2023-12-01",
+    "salary" : 7500.00,
+    "active" : true
+}
+
+###DELETE
+DELETE http://localhost:3001/employees/3
